@@ -21,6 +21,9 @@ app.use(express.urlencoded({extended:false}));
 app.get("/luckies", (req,res) => {
     res.render("regs.hbs")
 })
+app.get("/Thankyou",(req,res) =>{
+    res.send("Thankyou if you win we contact you");
+})
 
 
 
